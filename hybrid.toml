@@ -1,0 +1,29 @@
+[buildPlans.ioHybrid]                         # <iosevka-custom> is your plan name
+family = "Dank Mono"                           # Font menu family name
+design = ["v-at-long", "v-zero-dotted", "v-a-singlestorey", "v-f-tailed", "v-g-singlestorey", "v-i-italic", "v-l-italic", "v-y-curly"] # Customize styles
+upright = ["upright-only", "styles"]   # Upright-only styles
+italic = ["italic-only", "styles"]     # Italic-only styles
+oblique = ["oblique-only", "styles"]   # Oblique-only styles
+
+# Override default building weights
+# When buildPlans.<plan name>.weights is absent
+# All weights would built and mapped to default shape/CSS
+[buildPlans.ioHybrid.weights.regular]
+shape = 400                            # Weight for glyph shapes
+menu  = 400                            # Weight for menu name
+css   = 400                            # Weight for webfont CSS
+
+[buildPlans.ioHybrid.weights.bold]
+shape = 700
+menu  = 700
+css   = 700
+# end weight section
+
+
+# Override default building slant sets
+# Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
+# When this section is absent, all slants would be built.
+[buildPlans.ioHybrid.slants]
+upright = "normal"
+italic = "italic"
+oblique = "oblique"
